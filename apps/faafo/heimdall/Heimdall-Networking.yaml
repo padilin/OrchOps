@@ -1,0 +1,19 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: argocd-server
+  namespace: argocd
+spec:
+  entryPoints:
+    heimdall:
+      addess: ':9999'
+  routes:
+    - kind: Rule
+      match: Host(`lili`)
+      priority: 10
+      services:
+        - name: heimdall
+          port: 80
+  tls:
+    certResolver: default
+    options: {}
