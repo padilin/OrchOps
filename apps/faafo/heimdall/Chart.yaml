@@ -1,5 +1,6 @@
 ---
 apiVersion: v2
+name: HeimOps
 dependencies:
   - name: heimdall
     version: 8.2.0
