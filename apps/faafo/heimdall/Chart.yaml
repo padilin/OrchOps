@@ -1,6 +1,10 @@
 ---
 apiVersion: v2
 name: HeimOps
+description: Helm Chart
+type: application
+version: 0.1.0
+appVersion: "2.2.2"
 dependencies:
   - name: heimdall
     version: 8.2.0
