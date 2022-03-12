@@ -1,6 +1,10 @@
 ---
 apiVersion: v2
-name: wordpress
+name: HeimdallAtHome
+description: Helm Chart for Argocd/k8s
+type: application
+version: 0.1.0
+appVersion: 2.2.2
 dependencies:
   - name: heimdall
     version: 8.2.0
