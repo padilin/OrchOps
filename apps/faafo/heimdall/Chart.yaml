@@ -1,0 +1,7 @@
+---
+apiVersion: v2
+name: wordpress
+dependencies:
+  - name: heimdall
+    version: 8.2.0
+    repository: https://k8s-at-home.com/charts/
